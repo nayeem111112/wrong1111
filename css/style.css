@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, ul, p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+.nav-link{
+    color: #ffff;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding: 0 !important;
+    
+}
+.nav-item{
+    padding: 0 10px;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 0%;
+    background-color:#008ed6;
+    transition: .4s all ease-in-out;
+}
+.nav-link::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 0%;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+.nav-link:hover{
+    color: #ffff;
+}
+.nav-link:hover::before{
+    width: 48%;
+}
+.nav-link:hover::after{
+    width: 48%;
+}
+.content{
+
+color: #ffff;
+}
+.content h4{
+
+color: #008ed6;
+
+font-size: 14px;
+
+text-transform: uppercase;
+
+margin-bottom: 20px;
+}
+.content h1{
+    
+color: #ffff;
+    
+margin-bottom: 20px;
+}
+.content p{
+    
+color: #999999;
+    
+margin-bottom: 40px;
+}
+.btn-download{
+    
+color: #fff;
+    
+text-transform: uppercase;
+    
+font-size: 12px;
+    
+border: 1px solid #999999;
+    
+border-radius: 3px;
+    
+padding: 8px 20px;
+}
+.btn-download:hover{
+    background-color: #008ed6;
+    color: #fff;
+    border-color: #008ed6;
+}
+.view{
+    margin-left: 10px;
+}
+.phone{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
